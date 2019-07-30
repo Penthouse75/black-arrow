@@ -1,0 +1,78 @@
+.wrapper {
+    width: 100%;
+    background-color: red;
+}
+
+.head {
+    width: 100%;
+    height: 750px;
+    background-color: aqua;
+    box-sizing: border-box;
+    background-image: url("/img/head1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.darker {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    background-color: rgba(16, 18, 24, .71);
+}
+.menu {
+    background-color: blue;
+    width: 100%;
+    height: 26px;
+    padding-right: 100px;
+}
+.menu > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu > ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu > ul a:hover {
+    font-size: 18px;
+    color: #87D9F1;
+}
+
+.menu > ul > li{
+    display: table-cell;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.pagename {
+    width: 100%;
+    height: 106px;
+    background-color: red;
+    align-items: center;
+}
+
+.baseInfo {
+    width: 100%;
+    height: 750px;
+    background-color: darkblue;
+}
+.objects {
+    width: 100%;
+    height: 750px;
+    background-color: gray;
+}
+.contacts {
+    width: 100%;
+    height: 750px;
+    background-color: hotpink;
+}   
+.footer {
+    width: 100%;
+    height: 750px;
+    background-color: darkgreen;
+}
