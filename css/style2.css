@@ -1,0 +1,50 @@
+.cards {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin: 0 auto;
+  /* width: 700px; */
+}
+
+.card {
+  /* display: flex; */
+  /* flex-grow: 1;
+  flex-basis: 300px;
+  flex-direction: column; */
+  margin: 10px;
+  padding: 20px;
+}
+
+.card-meta1 {
+  display: flex;
+}
+
+.card-category1 {
+  flex-grow: 1;
+}
+
+.card-content1 {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.card-img {
+  /* width: 100%; */
+  width: 200px;
+}
+
+.card-button1 {
+  margin-top: auto;
+}
+
+/* Стили для зума */
+
+.zoomer1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
