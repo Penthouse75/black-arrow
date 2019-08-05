@@ -8,8 +8,93 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/debug.css">
+    <link rel="stylesheet" href="/css/burger.css">
 </head>
 <body>
+    <!-- МОБИЛЬНАЯ ВЕРСИЯ -->
+    <div class="container-handheld">
+        <!-- burger -->
+            <nav role="navigation">
+                    <div id="menuToggle">
+                    <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
+                    <input type="checkbox" />
+                    
+                    <!-- Some spans to act as a hamburger. They are acting like a real hamburger, not that McDonalds stuff. -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                    <!-- Too bad the menu has to be inside of the button but hey, it's pure CSS magic. -->
+                    <ul id="menu">
+                        <a href="#"><li>О компании</li></a>
+                        <a href="#"><li>Услуги</li></a>
+                        <a href="#"><li>Информация</li></a>
+                        <a href="#"><li>FAQ</li></a>
+                        <a href="#"><li>Контакты</li></a>
+                        <a href="#"><li>Личный кабинет</li></a>
+                        <!-- <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a> -->
+                    </ul>
+                    </div>
+            </nav>
+        <!-- МЕНЮ -->
+        <nav class="menu-handheld">
+            <div class="burger-button"><!-- <a class="nav-toggle" href="#"><div class="burger-button"><span></span></div></a> --></div>
+            <!-- <div class="burger">
+                <ul>
+                    <li><a href="http://ya.ru">О компании</a></li>
+                    <li><a href="http://ya.ru">Услуги</a></li>
+                    <li><a href="http://ya.ru">Информация</a></li>
+                    <li><a href="http://ya.ru">Новости</a></li>
+                    <li><a href="http://ya.ru">FAQ</a></li>
+                    <li><a href="http://ya.ru">Контакты</a></li>
+                    <li><a href="http://ya.ru">Личный кабинет</a></li>
+                </ul>
+            </div> -->
+
+            <div class="namepage-handheld">ЧЕРНАЯ СТРЕЛА</div>
+            <div class="button-lk"><a href="http://ya.ru"><img src="/img/lk.png" class="" alt=""></a></div>
+        </nav>
+        <!-- ИМЯ КОМПАНИИ -->
+        <div class="header-center-handheld">
+            <p class="aboutpage-handheld ">Управляющая компания нового уровня</p>
+        </div>
+        <!-- БЫСТРЫЕ КНОПКИ -->
+        <div class="header-down-handheld">
+            <a href="http://ya.ru"><div class="buttonblock-handheld">Внести показания счетчиков и оплатить квитанции</div></a>
+            <a href="http://ya.ru"><div class="buttonblock-handheld">Заказать дополнительные услуги </div></a>
+            <a href="http://ya.ru"><div class="buttonblock-handheld">Начать сотрудничество </div></a>
+        </div>
+    </div>
+    <!-- БЫСТРАЯ НАВИГАЦИЯ ПО САЙТУ -->
+    <div class="container2-handheld ">
+        <div class="baseInfo-name-handheld ">Черная стрела</div>
+        <div class="baseInfo-center">
+            <div class="baseInfo-center-item"><img src="/img/setup.png" alt=""><div class="">Самые современные технологии в управлении домами</div></div>
+            <div class="baseInfo-center-item"><img src="/img/bargraph.png" alt=""><div class="">Только проверенные застройщики</div></div>
+            <div class="baseInfo-center-item"><img src="/img/friends-front.png" alt=""><div class="">Круглосуточный клиентский сервис</div></div>
+        </div>
+        <div class="baseInfo-name-handheld">Объекты</div>
+    </div>
+    <!-- КАРТИНКИ ДОМОВ -->
+    <div class="objects-left-container">
+        <div class="objects-left-handheld"></div>
+        <div class="objects-item-text">Лесной пр., 26</div>
+    </div>
+    <div class="objects-left-container">
+            <div class="objects-right-handheld"></div>
+            <div class="objects-item-text">Невский пр., 170</div>
+    </div>
+    <div class="objects-left-container">
+            <div class="objects2-left-handheld"></div>
+            <div class="objects-item-text">Новгородская ул., 19</div>
+    </div>
+    <!-- ОБРАТНАЯ СВЯЗЬ -->
+    <div class="container2-handheld ">
+        <div class="baseInfo-name-handheld">Напишите нам</div>
+    </div>
+    <!-- КОНТАКТЫ -->
+
+    <!-- ОБЫЧНАЯ СТРАНИЦА -->
     <div class="container">
         <div class="header item">
             <div class="header-up">
@@ -25,7 +110,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="header-center">
+            <div class="header-center"> <!-- как лучше закрыть блок целиком или каждый входящий? -->
                 <div class="namepage">ЧЕРНАЯ СТРЕЛА</div>
                 <div class="aboutpage">Управляющая компания нового уровня</div>
                 <div class="lozung">Оказываем премеум услуги для жильцов с применением современных технологий</div>
@@ -36,7 +121,7 @@
                 <a href="http://ya.ru"><div class="buttonblock">Начать сотрудничество <div><img src="/img/arrow.png" class="buttonblock-arrow" alt=""></div></div></a>
             </div>
         </div>
-        <div class="baseInfo item ">
+        <div class="baseInfo item">
             <div class="baseInfo-name">Черная стрела</div>
             <div class="baseInfo-center">
                 <div class="baseInfo-center-item"><img src="/img/setup.png" alt=""><div class="">Самые современные технологии в управлении домами</div></div>
@@ -45,11 +130,11 @@
             </div>
             <div class="baseInfo-name">Объекты</div>
         </div>
-        <div class="objects item myselect3">
-                <div class="objects-left"><img src="/img/house-left.png" alt=""></div>
-                <div class="objects-right"><img src="/img/house-right.png" alt=""></div>
-                <div class="objects2-left"><img src="/img/house2-left.png" alt=""></div>
-                <div class="objects2-right"><img src="/img/house2-right.png" alt=""></div>
+        <div class="objects item">
+                <div class="objects-left"><!-- <img src="/img/house-left.png" alt=""> --></div>
+                <div class="objects-right"><!-- <img src="/img/house-right.png" alt=""> --></div>
+                <div class="objects2-left"><!-- <img src="/img/house2-left.png" alt=""> --></div>
+                <div class="objects2-right"><!-- <img src="/img/house2-right.png" alt=""> --></div>
         </div>
         <div class="contacts item"></div>
         <div class="footer item"></div>
