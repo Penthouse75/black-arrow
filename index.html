@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/reset.css">
+    
+    <link rel="stylesheet" href="/css/reset.css"><link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/debug.css">
     <link rel="stylesheet" href="/css/burger.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- МОБИЛЬНАЯ ВЕРСИЯ -->
@@ -16,41 +17,27 @@
         <!-- burger -->
             <nav role="navigation">
                     <div id="menuToggle">
-                    <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
-                    <input type="checkbox" />
-                    
-                    <!-- Some spans to act as a hamburger. They are acting like a real hamburger, not that McDonalds stuff. -->
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    
-                    <!-- Too bad the menu has to be inside of the button but hey, it's pure CSS magic. -->
-                    <ul id="menu">
-                        <a href="#"><li>О компании</li></a>
-                        <a href="#"><li>Услуги</li></a>
-                        <a href="#"><li>Информация</li></a>
-                        <a href="#"><li>FAQ</li></a>
-                        <a href="#"><li>Контакты</li></a>
-                        <a href="#"><li>Личный кабинет</li></a>
-                        <!-- <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a> -->
-                    </ul>
+                        <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
+                        <input type="checkbox" />
+                        <!-- Some spans to act as a hamburger. They are acting like a real hamburger, not that McDonalds stuff. -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <!-- Too bad the menu has to be inside of the button but hey, it's pure CSS magic. -->
+                        <ul id="menu">
+                            <a href="#"><li>О компании</li></a>
+                            <a href="#"><li>Услуги</li></a>
+                            <a href="#"><li>Информация</li></a>
+                            <a href="#"><li>FAQ</li></a>
+                            <a href="#"><li>Контакты</li></a>
+                            <a href="#"><li>Личный кабинет</li></a>
+                            <!-- <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a> -->
+                        </ul>
                     </div>
             </nav>
         <!-- МЕНЮ -->
         <nav class="menu-handheld">
             <div class="burger-button"><!-- <a class="nav-toggle" href="#"><div class="burger-button"><span></span></div></a> --></div>
-            <!-- <div class="burger">
-                <ul>
-                    <li><a href="http://ya.ru">О компании</a></li>
-                    <li><a href="http://ya.ru">Услуги</a></li>
-                    <li><a href="http://ya.ru">Информация</a></li>
-                    <li><a href="http://ya.ru">Новости</a></li>
-                    <li><a href="http://ya.ru">FAQ</a></li>
-                    <li><a href="http://ya.ru">Контакты</a></li>
-                    <li><a href="http://ya.ru">Личный кабинет</a></li>
-                </ul>
-            </div> -->
-
             <div class="namepage-handheld">ЧЕРНАЯ СТРЕЛА</div>
             <div class="button-lk"><a href="http://ya.ru"><img src="/img/lk.png" class="" alt=""></a></div>
         </nav>
@@ -89,11 +76,64 @@
             <div class="objects-item-text">Новгородская ул., 19</div>
     </div>
     <!-- ОБРАТНАЯ СВЯЗЬ -->
-    <div class="container2-handheld ">
-        <div class="baseInfo-name-handheld">Напишите нам</div>
+    <div class="container2-handheld  ">
+        <form action="/cgi-bin/mailinglist.php" method="post" class="contact-form "> 
+            <fieldset> 
+                <div class="contact-header">Напишите нам</div> 
+                <div class="contact-header-2">Если у вас есть вопросы по работе Черной Стрелы</div> 
+                    <ol> 
+                        <li class="contact-header-field">
+                            <label for="name" class="contact-header-field-label">Как к вам обращаться?</label> 
+                            <input type="text" name="name" id="name" class="contact-input-name" placeholder="Ваше имя">
+                        </li> 
+                        <li class="contact-header-field">
+                            <label for="email" class="contact-header-field-label">Электронная почта</label> 
+                            <input type="text" name="email" id="email" class="contact-input-name" placeholder="belka23@gmail.com">
+                        </li> 
+                        <li class="contact-header-field">
+                            <label for="message" class="contact-header-field-label">Ваше сообщение</label> 
+                            <textarea type="text" name="message" id="message" class="contact-textarea contact-input-name" placeholder="Введите текст"></textarea>
+                        </li>
+                    </ol>
+                    <!-- <div >Внести показания счетчиков и оплатить квитанции</div> -->
+                        <input type="submit" value="Отправить" class="buttonblock-handheld contact-button">
+            </fieldset> 
+        </form>
     </div>
     <!-- КОНТАКТЫ -->
-
+    <div class="contact-handheld">
+        <div class="contact-handheld-name">Черная стрела</div>
+        <div class="contact-handheld-phone">8-931-55-76-99</div>
+        <div class="contact-handheld-menu">
+            <table class="contact-handheld-menu-table">
+                <tr>
+                    <td>
+                        <div class="contact-handheld-menu-item">Компания</div>
+                        <div class="contact-handheld-menu-item">Услуги</div>
+                        <div class="contact-handheld-menu-item">Информация</div>
+                        <div class="contact-handheld-menu-item">Новости</div>
+                        <div class="contact-handheld-menu-item">FAQ</div>
+                        <div class="contact-handheld-menu-item">Контакты</div>
+                        <div class="contact-handheld-menu-item">Тарифы</div>
+                    </td>
+                    <td>
+                        <div class="contact-handheld-menu-item">Список домов</div>
+                        <div class="contact-handheld-menu-item">Раскрытие информации</div>
+                        <div class="contact-handheld-menu-item">Вакансии</div>
+                        <div class="contact-handheld-menu-item">Сотрудничество</div>
+                        <div class="contact-handheld-menu-item">Тендеры</div>
+                        <div class="contact-handheld-menu-item">Часы приема</div>
+                        <div class="contact-handheld-menu-item">Памятки</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="contact-handheld-socialnetwork">
+            <a href="http://ya.ru" class="contact-handheld-socialnetwork-a"><img src="/img/vk.png" alt="" class="contact-handheld-socialnetwork-img"></a>
+            <a href="http://ya.ru" class="contact-handheld-socialnetwork-a"><img src="/img/instagram.png" alt="" class="contact-handheld-socialnetwork-img"></a>
+            <a href="http://ya.ru" class="contact-handheld-socialnetwork-a"><img src="/img/facebook.png" alt="" class="contact-handheld-socialnetwork-img"></a>
+        </div>
+    </div>
     <!-- ОБЫЧНАЯ СТРАНИЦА -->
     <div class="container">
         <div class="header item">
@@ -131,33 +171,79 @@
             <div class="baseInfo-name">Объекты</div>
         </div>
         <div class="objects item">
-                <div class="objects-left"><!-- <img src="/img/house-left.png" alt=""> --></div>
-                <div class="objects-right"><!-- <img src="/img/house-right.png" alt=""> --></div>
-                <div class="objects2-left"><!-- <img src="/img/house2-left.png" alt=""> --></div>
-                <div class="objects2-right"><!-- <img src="/img/house2-right.png" alt=""> --></div>
+                <div class="objects-left"></div>
+                <div class="objects-right"></div>
+                <div class="objects2-left"></div>
+                <div class="objects2-right"></div>
         </div>
-        <div class="contacts item"></div>
-        <div class="footer item"></div>
-    </div>
-    <!-- <div class="wrapper">
-        <header class="head myselect">
-            <div class="headcontainer myselect3">
-                <div class="menu myselect3">
-                    Меню
+        <div class="contacts item ">
+                <div class="container2 ">
+                    <form action="/cgi-bin/mailinglist.php" method="post" class="contact-form "> 
+                        <!-- <fieldset class="contact-form ">  -->
+                            <div class="contact-header">Напишите нам</div> 
+                            <div class="contact-header-2">Если у вас есть вопросы по работе Черной Стрелы, дополнительным услугам или вы не нашли, что искали.</div> 
+                            <div class="contact-header-3">* отвечаем в среднем, за 5 минут</div> 
+                                <div class="contact-form-field "> 
+                                    <div class="contact-header-field">
+                                        <label for="name" class="contact-header-field-label">Как к вам обращаться?</label> 
+                                        <input type="text" name="name" id="name" class="contact-input-name" placeholder="Ваше имя">
+                                    </div> 
+                                    <div class="contact-header-field">
+                                        <label for="email" class="contact-header-field-label">Электронная почта</label> 
+                                        <input type="text" name="email" id="email" class="contact-input-name" placeholder="belka23@gmail.com">
+                                    </div> 
+                                    <div class="contact-header-field">
+                                        <label for="message" class="contact-header-field-label">Ваше сообщение</label> 
+                                        <textarea type="text" name="message" id="message" class="contact-textarea contact-input-name" placeholder="Введите текст"></textarea>
+                                    </div>
+                                </div>
+                                <input type="submit" value="Отправить" class="buttonblock1 contact-button">
+                        <!-- </fieldset>  -->
+                    </form>
                 </div>
-                <div class="pagename myselect2">
-                    Name
-                </div>
-                <div class="buttons myselect3">
-                    Button                    
+        </div>
+        <div class="footer item">
+            <div class="contact">
+                <div class="contact-menu">
+                    <table class="contact-menu-table">
+                        <tr>
+                            <td>
+                                <div class="contact-name">Черная стрела</div>
+                                <div class="contact-socialnetwork">
+                                    <a href="http://ya.ru" class="contact-socialnetwork-a"><img src="/img/vk.png" alt="" class="contact-socialnetwork-img"></a>
+                                    <a href="http://ya.ru" class="contact-socialnetwork-a"><img src="/img/instagram.png" alt="" class="contact-socialnetwork-img"></a>
+                                    <a href="http://ya.ru" class="contact-socialnetwork-a"><img src="/img/facebook.png" alt="" class="contact-socialnetwork-img"></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="contact-menu-item">Компания</div>
+                                <div class="contact-menu-item">Услуги</div>
+                                <div class="contact-menu-item">Информация</div>
+                                <div class="contact-menu-item">Новости</div>
+                                <div class="contact-menu-item">FAQ</div>
+                                <div class="contact-menu-item">Контакты</div>
+                            </td>
+                            <td>
+                                <div class="contact-menu-item">Список домов</div>
+                                <div class="contact-menu-item">Раскрытие информации</div>
+                                <div class="contact-menu-item">Вакансии</div>
+                                <div class="contact-menu-item">Сотрудничество</div>
+                                <div class="contact-menu-item">Тендеры</div>
+                                <div class="contact-menu-item">Часы приема</div>
+                            </td>
+                            <td>
+                                <div class="contact-menu-item">Тарифы</div>
+                                <div class="contact-menu-item">Полезные телефоны и адреса</div>
+                                <div class="contact-menu-item">Информация о выполненных работах</div>
+                                <div class="contact-menu-item">Гарантийные случаи</div>
+                                <div class="contact-menu-item">Памятки</div>
+                                <div class="contact-menu-item">Шаблоны</div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-        </header>
-        <div class="baseInfo"></div>
-        <div class="objects"></div>
-        <div class="contacts"></div>
-        <footer class="footer"></footer>
-        
-    </div> -->
+        </div>
+    </div>
 </body>
 </html>
